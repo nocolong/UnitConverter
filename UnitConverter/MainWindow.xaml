@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UnitConverter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="1100" Left="-10" Top="-10">
+        Title="MainWindow" Height="700" Width="1175" Left="-10" Top="-10">
     <Grid Margin="0,0,-6.6,-0.2">
-        <Image Source="C:\github\UnitConverter\UnitConverter\Images\bigstock-An-human-brain-as-a-central-pr-12121697.jpg" Stretch="UniformToFill"></Image>
+        <Image Source="C:\github\UnitConverter\UnitConverter\Images\bigstock-An-human-brain-as-a-central-pr-12121697.jpg" Stretch="UniformToFill" OpacityMask="White"></Image>
         <Label x:Name="label" Content="Unit Converter" Margin="10,0,10.2,0" Height="36" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" FontStyle="Italic" Background="#FF333337" Foreground="White" FontFamily="OCR A Extended"/>
         <TextBox x:Name="celsius" HorizontalAlignment="Left" Height="23" Margin="10,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="kilometers" HorizontalAlignment="Left" Height="23" Margin="10,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
@@ -34,6 +34,27 @@
         <TextBlock x:Name="FtToYd" HorizontalAlignment="Left" Margin="354,407,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.34,-0.233" Width="120" Height="23" Background="White"/>
         <Label x:Name="label10" Content="Yard" HorizontalAlignment="Left" Margin="354,372,0,0" VerticalAlignment="Top" Width="120" Height="30" FontWeight="Bold" FontSize="16" Foreground="White"/>
         <Button x:Name="button4" Content="Convert" HorizontalAlignment="Left" Margin="790,407,0,0" VerticalAlignment="Top" Width="121" Height="23" Click="feetToYards" FontWeight="Bold" FontSize="16" FontFamily="OCR A Extended"/>
+        <Grid Margin="10,460,10.2,10.6" Background="DarkBlue">
+            <TextBox x:Name="oneChild" HorizontalAlignment="Left" Height="43" Margin="23,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+            <TextBlock x:Name="oneChildCharge" HorizontalAlignment="Left" Margin="23,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="132" Background="White"/>
+            <TextBox x:Name="twoChildren" HorizontalAlignment="Left" Height="43" Margin="273,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+            <TextBlock x:Name="twoChildrenCharge" HorizontalAlignment="Left" Margin="273,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="132" Background="White"/>
+            <TextBox x:Name="threeChildren" HorizontalAlignment="Left" Height="43" Margin="519,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+            <TextBlock x:Name="threeChildrenCharge" HorizontalAlignment="Left" Margin="519,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="132" Background="White"/>
+            <TextBox x:Name="fourChildren" HorizontalAlignment="Left" Height="43" Margin="751,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+            <TextBlock x:Name="fourChildrenCharge" HorizontalAlignment="Left" Margin="751,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="132" Background="White"/>
+            <Label x:Name="label12" Content="Hrs @1 Child" HorizontalAlignment="Left" Margin="23,45,0,0" VerticalAlignment="Top" Width="147" FontWeight="Bold" FontSize="16" Foreground="White" RenderTransformOrigin="0.516,1.002"/>
+            <Label x:Name="label13" Content="Hrs @2 Children" HorizontalAlignment="Left" Margin="273,48,0,0" VerticalAlignment="Top" Width="147" Height="29" FontWeight="Bold" FontSize="16" Foreground="White"/>
+            <Label x:Name="label14" Content="Hrs @3 Children" HorizontalAlignment="Left" Margin="519,48,0,0" VerticalAlignment="Top" Width="147" Height="29" FontWeight="Bold" FontSize="16" Foreground="White"/>
+            <Label x:Name="label15" Content="Hrs @4 Children" Margin="751,48,182,0" VerticalAlignment="Top" Height="29" FontWeight="Bold" FontSize="16" Foreground="White"/>
+            <Button x:Name="total1" Content="$Total" HorizontalAlignment="Left" Margin="160,82,0,0" VerticalAlignment="Top" Width="61" Height="43" Click="total1_Click" FontWeight="Bold" FontSize="16" FontFamily="OCR A Extended"/>
+            <Button x:Name="total2" Content="$Total" HorizontalAlignment="Left" Margin="410,82,0,0" VerticalAlignment="Top" Width="61" Height="43" Click="total2_Click" FontWeight="Bold" FontSize="16" FontFamily="OCR A Extended"/>
+            <Button x:Name="total3" Content="$Total" HorizontalAlignment="Left" Margin="656,82,0,0" VerticalAlignment="Top" Width="61" Height="43" Click="total3_Click" FontWeight="Bold" FontSize="16" FontFamily="OCR A Extended"/>
+            <Button x:Name="total4" Content="$Total" HorizontalAlignment="Left" Margin="888,82,0,0" VerticalAlignment="Top" Width="61" Height="43" Click="total4_Click" FontWeight="Bold" FontSize="16" FontFamily="OCR A Extended"/>
+            <Button x:Name="totalAll" Content="$ OWE" HorizontalAlignment="Left" Margin="998,82,0,0" VerticalAlignment="Top" Width="147" Height="43" Click="totalAll_Click" FontWeight="Bold" FontSize="16" FontFamily="OCR A Extended"/>
+            <TextBlock x:Name="amountOwed" HorizontalAlignment="Left" Margin="998,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="147" Background="White"/>
+        </Grid>
+        <Label x:Name="label11" Content="BabySitting Calculator" Margin="10,460,10.4,175.6" FontWeight="Bold" FontSize="18.667" FontStyle="Italic" Background="#FF333337" Foreground="White" FontFamily="OCR A Extended"/>
 
     </Grid>
 </Window>

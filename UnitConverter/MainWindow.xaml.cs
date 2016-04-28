@@ -69,5 +69,48 @@ namespace UnitConverter
             Yd = Ft * 0.33333;
             FtToYd.Text = Yd.ToString();
         }
+
+        private void total1_Click(object sender, RoutedEventArgs e)
+        {
+            double Hrs1;
+            double Hrs1Charge;
+            Hrs1 = double.Parse(oneChild.Text);
+            Hrs1Charge = Hrs1 * 15;
+            oneChildCharge.Text = Hrs1Charge.ToString();
+        }
+
+        private void total2_Click(object sender, RoutedEventArgs e)
+        {
+            double Hrs2;
+            double Hrs2Charge;
+            Hrs2 = double.Parse(twoChildren.Text);
+            Hrs2Charge = Hrs2 * 9;
+            twoChildrenCharge.Text = Hrs2Charge.ToString();
+        }
+
+        private void total3_Click(object sender, RoutedEventArgs e)
+        {
+            double Hrs3;
+            double Hrs3Charge;
+            Hrs3 = double.Parse(threeChildren.Text);
+            Hrs3Charge = Hrs3 * 7;
+            threeChildrenCharge.Text = Hrs3Charge.ToString();
+        }
+
+        private void total4_Click(object sender, RoutedEventArgs e)
+        {
+            double Hrs4;
+            double Hrs4Charge;
+            Hrs4 = double.Parse(fourChildren.Text);
+            Hrs4Charge = Hrs4 * 14;
+            fourChildrenCharge.Text = Hrs4Charge.ToString();
+        }
+
+        private void totalAll_Click(object sender, RoutedEventArgs e)
+        {
+            double TotalOwed;
+            TotalOwed = double.Parse(oneChildCharge.Text) + double.Parse(twoChildrenCharge.Text) + double.Parse(threeChildrenCharge.Text) + double.Parse(fourChildrenCharge.Text);
+            amountOwed.Text = TotalOwed.ToString();
+        }
     }
 }
